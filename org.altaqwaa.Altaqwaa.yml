@@ -7,12 +7,14 @@ base-version: "22.08"
 command: run.sh
 separate-locales: false
 finish-args:
-  - --socket=x11
+  - --socket=wayland
+  - --socket=fallback-x11
   - --share=ipc
   - --device=dri
   - --socket=pulseaudio
   - --share=network
   - --talk-name=org.freedesktop.Notifications
+  - --own-name=org.kde.* # Needed for system tray on KDE Wayland session
 modules:
   - name: altaqwaa
     buildsystem: simple
@@ -29,10 +31,8 @@ modules:
         url: https://github.com/rn0x/Altaqwaa-Islamic-Desktop-Application/releases/download/v3.0.1/altaqwaa-3.0.1.tar.gz
         sha256: ed7bd6ce3876e95a973f06247b0d1ed41858dbae46958f48df0d8bb2ad00ee7b
       # Wrapper to launch the app
-      - type: script
-        dest-filename: run.sh
-        commands:
-          - zypak-wrapper.sh /app/bin/altaqwaa "$@"
+      - type: file
+        path: run.sh
       - type: file
         path: org.altaqwaa.Altaqwaa.desktop
       - type: file

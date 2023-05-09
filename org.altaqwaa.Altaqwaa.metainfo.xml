@@ -5,9 +5,10 @@
   <name>Altaqwaa</name>
   <summary>Quran, adhkar, and prayer times</summary>
   <summary xml:lang="ar">القرآن وأذكار ومواقيت الصلاة</summary>
-  <url type="homepage">https://github.com/rn0x/Altaqwaa-Islamic-Desktop-Application</url>
+  <url type="homepage">https://altaqwaa.org</url>
   <url type="bugtracker">https://github.com/rn0x/Altaqwaa-Islamic-Desktop-Application/issues</url>
   <url type="donation">https://github.com/sponsors/rn0x</url>
+  <url type="vcs-browser">https://github.com/rn0x/Altaqwaa-Islamic-Desktop-Application</url>
   <developer_name>Ryan Almalki</developer_name>
   <metadata_license>FSFAP</metadata_license>
   <project_license>GPL-3.0-only</project_license>
@@ -29,7 +30,7 @@
       <li>Audible notifications for adhkar and prayer times</li>
     </ul>
     <p>
-      NOTE: Currently only supports in Arabic
+      NOTE: Currently only supports Arabic
     </p>
   </description>
 
