@@ -14,7 +14,7 @@ finish-args:
   - --socket=pulseaudio
   - --share=network
   - --talk-name=org.freedesktop.Notifications
-  - --own-name=org.kde.* # Needed for system tray on KDE Wayland session
+  # - --own-name=org.kde.* # Needed for system tray on KDE Wayland session
 modules:
   - name: altaqwaa
     buildsystem: simple
