@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <id>org.altaqwaa.Altaqwaa</id>
-
   <name>Altaqwaa</name>
   <summary>Quran, adhkar, and prayer times</summary>
   <summary xml:lang="ar">القرآن وأذكار ومواقيت الصلاة</summary>
-  <url type="homepage">https://altaqwaa.org</url>
-  <url type="bugtracker">https://github.com/rn0x/Altaqwaa-Islamic-Desktop-Application/issues</url>
+  <url type="homepage">https://github.com/rn0x/altaqwaa-desktop</url>
+  <url type="bugtracker">https://github.com/rn0x/altaqwaa-desktop/issues</url>
   <url type="donation">https://github.com/sponsors/rn0x</url>
-  <url type="vcs-browser">https://github.com/rn0x/Altaqwaa-Islamic-Desktop-Application</url>
-  <developer_name>Ryan Almalki</developer_name>
+  <url type="vcs-browser">https://github.com/rn0x/altaqwaa-desktop</url>
+  <developer id="org.altaqwaa">
+    <name>Ryan Almalki</name>
+  </developer>
   <metadata_license>FSFAP</metadata_license>
   <project_license>GPL-3.0-only</project_license>
   <content_rating type="oars-1.1" />
@@ -18,6 +19,7 @@
   </recommends>
 
   <description>
+    <p>**NOTE: Currently only supports Arabic**</p>
     <p>
       Free and open source Islamic desktop application that contains multiple features useful to Muslims. Customizable and easy to use.
     </p>
@@ -29,9 +31,6 @@
       <li>Multple methods to calculate prayer time (Umm Al-Qura, Muslim World League, and more).</li>
       <li>Audible notifications for adhkar and prayer times</li>
     </ul>
-    <p>
-      NOTE: Currently only supports Arabic
-    </p>
   </description>
 
   <launchable type="desktop-id">org.altaqwaa.Altaqwaa.desktop</launchable>
@@ -51,7 +50,7 @@
   </screenshots>
   <releases>
     <release version="3.0.1" date="2023-03-16">
-      <url>https://github.com/rn0x/Altaqwaa-Islamic-Desktop-Application/releases/tag/v3.0.1</url>
+      <url>https://github.com/rn0x/altaqwaa-desktop/releases/tag/v3.0.1</url>
       <description>
         <ul>
           <li>إضافة عناصر جديدة في الصفحات الخاصة بالتطبيق لإعطاء تجربة إستخدام فريدة.</li>
