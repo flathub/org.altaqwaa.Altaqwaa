@@ -19,17 +19,17 @@ modules:
   - name: altaqwaa
     buildsystem: simple
     build-commands:
-      - mv * /app/bin
+      - mv altaqwaa-4.0.0/* /app/bin
       - mkdir -p /app/share/icons/hicolor/256x256/apps/
       - mkdir -p /app/share/applications
       - mkdir -p /app/share/metainfo
-      - mv /app/bin/${FLATPAK_ID}.png /app/share/icons/hicolor/256x256/apps/
-      - mv /app/bin/${FLATPAK_ID}.desktop /app/share/applications/
-      - mv /app/bin/${FLATPAK_ID}.metainfo.xml /app/share/metainfo
+      - mv ${FLATPAK_ID}.png /app/share/icons/hicolor/256x256/apps/
+      - mv ${FLATPAK_ID}.desktop /app/share/applications/
+      - mv ${FLATPAK_ID}.metainfo.xml /app/share/metainfo
     sources:
       - type: archive
-        url: https://github.com/rn0x/altaqwaa-desktop/releases/download/v3.0.1/altaqwaa-3.0.1.tar.gz
-        sha256: ed7bd6ce3876e95a973f06247b0d1ed41858dbae46958f48df0d8bb2ad00ee7b
+        url: https://github.com/rn0x/altaqwaa-desktop/releases/download/v4.0.0/altaqwaa-4.0.0.tar.gz
+        sha256: 99e2e4dfd066f1ee1f6c4cda9cd9f8378da2d372f6e037f94a69c5d150282b12
       # Wrapper to launch the app
       - type: file
         path: run.sh
